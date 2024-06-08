@@ -44,6 +44,7 @@
         
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
+         <link rel="stylesheet" href="assets/css/style2.css">
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -66,43 +67,7 @@ overflow-x:hidden;
 }
 
 }
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-
-}
-@media only screen and (max-width: 768px){	.logoimg{max-height:14vh; margin-top:-43px; width:100px;}
-
-}
-
-
-.logoimg{max-height:20vh; margin-top:-43px;width:130px;}
 
         		
         	</style>
@@ -116,52 +81,13 @@ overflow-x:hidden;
 		
 		<!--header-top start -->
 		<header id="header-top " class="header-top" style="background-color:#000; color: #fff;">
-			<ul>
-				<li>
-					<div class="header-top-left">
-						<ul>
-							<li class="select-opt">
-								<select name="language" id="language">
-									<option value="default">EN</option>
-									<option value="Bangla">BN</option>
-									<option value="Arabic">AB</option>
-								</select>
-							</li>
-							<li class="select-opt">
-								<select name="currency" id="currency">
-									<option value="usd">USD</option>
-									<option value="euro">Euro</option>
-									<option value="bdt">BDT</option>
-								</select>
-							</li>
-							<li class="select-opt">
-								<a href="#"><span class="lnr lnr-magnifier"></span></a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class="head-responsive-right pull-right">
-					<div class="header-top-right">
-						<ul>
-							<li class="header-top-contact">
-								+1 222 777 6565
-							</li>
-							<li class="header-top-contact">
-								<a href="#">sign in</a>
-							</li>
-							<li class="header-top-contact">
-								<a href="#">register</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-			</ul>
+			
 					
 		</header><!--/.header-top-->
 		<!--header-top end -->
 
 		<!-- top-area Start -->
-		<section class="top-area">
+		<div class="top-area">
 			<div class="header-area">
 				<!-- Start Navigation -->
 			    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
@@ -181,12 +107,16 @@ overflow-x:hidden;
 			            <!-- Collect the nav links, forms, and other content for toggling -->
 			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                    <li class=" scroll active"><a href="#home">home</a></li>
-			                    <li class="scroll"><a href="buy.html">buy</a></li>
-			                    <li class="scroll"><a href="Jaipur.html">Jaipur</a></li>
-			                    <li class="scroll"><a href="#reviews">review</a></li>
-			                    <li class="scroll"><a href="#blog">blog</a></li>
-			                    <li class="scroll"><a href="#contact">contact</a></li>
+			                    <li class="  active"><a href="#home">home</a></li>
+			                    <li class=""><a href="#">About Us </a></li>
+			                    <li class=""><a href="#"> Services   </a></li>
+			                    <li class=""><a href="#">Contact Us   </a></li>
+
+			                    <!-- <li class=""><a href="buy.html">buy</a></li>
+			                    <li class=""><a href="Jaipur.html">Jaipur</a></li>
+			                    <li class=""><a href="#reviews">review</a></li>
+			                    <li class=""><a href="#blog">blog</a></li>
+			                    <li class=""><a href="#contact">contact</a></li> -->
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
 			        </div><!--/.container-->
@@ -195,7 +125,7 @@ overflow-x:hidden;
 			</div><!--/.header-area-->
 		    <div class="clearfix"></div>
 
-		</section><!-- /.top-area-->
+		</div><!-- /.top-area-->
 		<!-- top-area End -->
 
 		<!--welcome-hero start -->
@@ -212,7 +142,7 @@ overflow-x:hidden;
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="max-height:70VH">
     <div class="item active">
       <img src="assets/images/welcome-hero/banner.jpg" alt="Los Angeles">
     </div>
@@ -236,152 +166,224 @@ overflow-x:hidden;
     <span class="sr-only">Next</span>
   </a>
 </div>
-			<!-- <div class="container">
-				<div class="welcome-hero-txt">
-					<h2>best place to find and explore <br> that all you need </h2>
-					<p>
-						Find Best Place, Restaurant, Hotel, Real State and many more think in just One click 
-					</p>
-				</div>
-				<div class="welcome-hero-serch-box">
-					<div class="welcome-hero-form">
-						<div class="single-welcome-hero-form">
-							<h3>what?</h3>
-							<form action="index.html">
-								<input type="text" placeholder="Ex: palce, resturent, food, automobile" />
-							</form>
-							<div class="welcome-hero-form-icon">
-								<i class="flaticon-list-with-dots"></i>
-							</div>
-						</div>
-						<div class="single-welcome-hero-form">
-							<h3>location</h3>
-							<form action="index.html">
-								<input type="text" placeholder="Ex: london, newyork, rome" />
-							</form>
-							<div class="welcome-hero-form-icon">
-								<i class="flaticon-gps-fixed-indicator"></i>
-							</div>
-						</div>
-					</div>
-					<div class="welcome-hero-serch">
-						<button class="welcome-hero-btn" onclick="window.location.href='#'">
-							 search  <i data-feather="search"></i> 
-						</button>
-					</div>
-				</div>
-			</div> -->
+			
 
 		</section>
-		<!--/.welcome-hero-->
-		<!--welcome-hero end -->
+		<!-- form section -->
+		<section class="container">
+			<div class="row">
+				<div class="col-md-6">
+		<div class="container" style="padding: 20px;">
+     
+      <form action="#" class="rfff" >
+      	<h2 class="text-center" style="color: #038034;"> fill your Query</h2>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for=""> Name</label>
+            </div>
+            
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Email Address:</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Mobile :</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Query: </label>
+            </div>
+          </div>
 
-		<!--list-topics start -->
-		<!-- <section id="list-topics" class="list-topics">
-			<div class="container">
-				<div class="list-topics-content">
-					<ul>
-						<li>
-							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
-									<i class="flaticon-restaurant"></i>
-								</div>
-								<h2><a href="#">resturent</a></h2>
-								<p>150 listings</p>
-							</div>
-						</li>
-						<li>
-							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
-									<i class="flaticon-travel"></i>
-								</div>
-								<h2><a href="#">destination</a></h2>
-								<p>214 listings</p>
-							</div>
-						</li>
-						<li>
-							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
-									<i class="flaticon-building"></i>
-								</div>
-								<h2><a href="#">hotels</a></h2>
-								<p>185 listings</p>
-							</div>
-						</li>
-						<li>
-							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
-									<i class="flaticon-pills"></i>
-								</div>
-								<h2><a href="#">healthcaree</a></h2>
-								<p>200 listings</p>
-							</div>
-						</li>
-						<li>
-							<div class="single-list-topics-content">
-								<div class="single-list-topics-icon">
-									<i class="flaticon-transport"></i>
-								</div>
-								<h2><a href="#">automotion</a></h2>
-								<p>120 listings</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div> -->
-			<!--/.container-->
+            
 
-		<!-- </section>/.list-topics -->
-		<!--list-topics end-->
-
-		
-
-		<!--works start -->
-		<section id="works" class="works">
-			<div class="container">
-				<div class="section-header">
+         
+            <div class="form-row submit-btn" style="margin: auto;">
+               <div class="input-data" style="margin: auto;">
+                  <div class="inner"></div>
+                  <input type="submit" value="submit">
+                  <br>
+               </div>
+            </div>
+            <br>
+      </form>
+      </div> 
+     </div>
+              <div class="col-md-6">
+              	
+              	<div class="section-header">
 					<br><br>
-					<h2>how it works</h2>
-					<!-- <p>Learn More about how our website works</p> -->
-				</div><!--/.section-header-->
-				<div class="works-content">
+					<h2 class="text-center" style="color: #038034; padding-top:30px">About us</h2>
+					<p class="text-center" style="padding: 20px 10px;">We Provide money exchange service, university fee payment, buy/sell currencies, visa fee payment, forex travel card, medical payment. </p>
+				</div>
+  	
+               </div>
+           </div>
+       </section>
+
+
+		<!-- /form section -->
+		<!-- image section  -->
+		<section class="" style="padding: 10px 60px; background-color: #000;">
+			<div class="row px-5">
+						<div class="col-md-3 col-sm-6" style=" padding: 10px; color: #fff;">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<img src="https://th.bing.com/th/id/OIP.dqzNDSr-ozCyH_ck3ZSu9AHaEL?w=304&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="blog image" style="padding: 10px 20px 0px 20px; color: #fff;">
+								</div>
+								<div class="single-blog-item-txt" style="color: #fff;">
+									<h2 class="text-center" style="color:  #038034;  padding: 20px 10px 10px 10px; ">Currency Exchange</h2>
+									<hr class=""style=" width: 50%; margin:auto; border: 1px solid  #038034; " >
+									<!-- <h4>posted <span>by</span> <a href="#">admin</a> march 2018</h4> -->
+									<p class="text-justify" style="color: #fff; padding: 10px 5px ">
+										Get the best exchange rates in Delhi, Noida, GuruGram online. We offer safe and hassle- free buy & sell currency exchange services in Delhi. Guruji Forex, Delhi's most reputable currency exchange. Our organization is the largest online currency exchange, forex card.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6"style=" padding: 10px; color: #fff;">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<img src="https://th.bing.com/th/id/OIP.3wCMWMHEyBEizAVwiDaI5gAAAA?rs=1&pid=ImgDetMain" alt="blog image" style="padding: 10px 20px 0px 20px; color: #fff;">
+								</div>
+								<div class="single-blog-item-txt" style="color: #fff;">
+									<h2 class="text-center" style="color:  #038034;  padding: 20px 10px 10px 10px; ">Travel Card
+</h2>
+									<hr class=""style=" width: 50%; margin:auto; border: 1px solid  #038034; " >
+									<!-- <h4>posted <span>by</span> <a href="#">admin</a> march 2018</h4> -->
+									<p class="text-justify" style="color: #fff; padding: 10px 5px ">
+										A travel currency card is the safest and smartest way to carry foreign currency on international trips. Travel or forex cards are available for different currencies like USD, GBP, EUR, AUD, CAD, JPY, SGD, SEK, CHF, AED and SAR on VISA and MasterCard platforms.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6"style=" padding: 10px; color: #fff; box-shadow: 0 5px 10px rgba(1,1,1,.6);">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<img src="https://th.bing.com/th/id/OIP.luPxxnDtvry4irVn5bF9FgHaEK?rs=1&pid=ImgDetMain" alt="blog image" style="padding: 10px 20px 0px 20px; color: #fff;">
+								</div>
+								<div class="single-blog-item-txt" style="color: #fff;">
+									<h2 class="text-center" style="color:  #038034;  padding: 20px 10px 10px 10px; ">Money Transfer</h2>
+									<hr class=""style=" width: 50%; margin:auto; border: 1px solid  #038034; " >
+									<!-- <h4>posted <span>by</span> <a href="#">admin</a> march 2018</h4> -->
+									<p class="text-justify" style="color: #fff; padding: 10px 5px ">
+										Now You Can Send money from India to 100+ countries at live exchange rates with Guruji Forex. Say "No" to bank visit as we offer 24*7 online international money transfer facility.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6"style=" padding: 10px; color: #fff;">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<img src="https://th.bing.com/th/id/OIP.iQxGPqUKr0bo_VxDmaf5-wAAAA?rs=1&pid=ImgDetMain" alt="blog image" width="100%" style="padding: 10px 20px 0px 20px; color: width:1600px; height:30vh; max-height:50vh #fff;">
+								</div>
+								<div class="single-blog-item-txt" style="color: #fff;">
+									<h2 class="text-center" style="color:  #038034;  padding: 20px 10px 10px 10px; ">Travel Insurance</h2>
+									<hr class=""style=" width: 50%; margin:auto; border: 1px solid  #038034; " >
+									<!-- <h4>posted <span>by</span> <a href="#">admin</a> march 2018</h4> -->
+									<p class="text-justify" style="color: #fff; padding: 10px 5px ">
+										
+                                      Travel insurance is taken out when you go on a longer trip. In this insurance we cover the exact duration of the trip and several policies. We offer different policies in the same travel insurance. Lower and higher processing cost options. For people traveling abroad, for example to the USA, higher health insurance is preferable.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+
+		</section>
+		<!-- image section -->
+		<!-- our service -->
+		<section id="works" class="works">
+			<div class="" style="padding:30px">
+				<div class="section-header col-12">
+					<br><br>
+					<h2>Our Services</h2>
+					<p class="text-center" style="padding: 20px 10px;">We Provide money exchange service, university fee payment, buy/sell currencies, visa fee payment, forex travel card, medical payment. </p>
+				</div>
+				<br><br>
 					<div class="row">
-						<div class="col-md-4 col-sm-6">
+						<div class="col-md-3 col-sm-6">
 							<div class="single-how-works">
-								<div class="single-how-works-icon">
+								<!-- <div class="single-how-works-icon">
 									<i class="flaticon-lightbulb-idea"></i>
-								</div>
-								<h2><a href="#">PLACE YOUR ORDER</a></h2>
-								<p>
-									Simply choose the product and currency and enter your travel details. 
+								</div> -->
+								<h2><a href="#">University Fee Payments </a></h2>
+								<hr class=""style=" width: 70%; margin:auto; border: 1px solid  #038034; " >
+								<br>
+								<br>
+								<br>
+								<p class="text-justify px-5 p-5">
+									Paying university fees internationally? We make it simple and stress-free. Our specialized service ensures your payments are processed securely and swiftly, so you can focus on your studies. 
+
 								</p>
+								<!-- <hr class=""style=" width: 70%; margin:auto; border: 1px solid  #038034; " > -->
+								<br>
+								<br>
+								
 								<!-- <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
 									read more
 								</button> -->
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6">
+						<div class="col-md-3 col-sm-6">
+							<div class="single-how-works">
+								<!-- <div class="single-how-works-icon">
+									<i class="flaticon-lightbulb-idea"></i>
+								</div> -->
+								<h2><a href="#">Convenient Visa Fee Payments </a></h2>
+								<hr class=""style=" width: 70%; margin:auto; border: 1px solid  #038034; " >
+								<br>
+								<br>
+								<p class="text-justify px-5 p-5">  Planning your next adventure? Let us take care of your visa fee payments. Our quick and reliable service ensures your visa fees are paid on time, every time. Combine this with our Forex Travel Card for a seamless travel experience.</p>
+
+								<br>
+								<!-- <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+									read more
+								</button> -->
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
 							<div class="single-how-works" >
-								<div class="single-how-works-icon">
+								<!-- <div class="single-how-works-icon">
 									<i class="flaticon-networking"></i>
-								</div>
-								<h2><a href="#">MAKE PARTIAL / FULL PAYMENT</a></h2>
-								<p>
-									Block your forex rates by paying partially or simply pay the full amount.
+								</div> -->
+								<h2><a href="#">Easy Medical Payments</a></h2>
+								<hr class=""style=" width: 70%; margin:auto; border: 1px solid  #038034; " >
+								<br>
+								<br><br>
+								<p class="text-justify px-5 p-5"> 
+									Need to pay medical expenses abroad? We offer a secure and efficient solution for all your medical payment needs. Whether it's currency exchange or direct payment services, we ensure your transactions are smooth and stress-free. Your health is our priority!
 								</p>
 								<!-- <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
 									read more
 								</button> -->
+
+								
+								
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6">
+						<div class="col-md-3 col-sm-6">
 							<div class="single-how-works" >
-								<div class="single-how-works-icon">
-									<i class="flaticon-location-on-road"></i>
-								</div>
-								<h2><a href="#">DOOR STEP DELIVERY / PICKUP FROM BRANCH</a></h2>
-								<p>
-									Get your forex delivered at home for free or pick it up from our outlets.
+								
+								<h2><a href="#">Travel Smart with Forex Travel Card </a></h2>
+								<hr class=""style=" width: 70%; margin:auto; border: 1px solid  #038034; " >
+								<br>
+								<br>
+								<p class="text-justify px-5 p-5">
+									Traveling soon? Our Forex Travel Card is your perfect travel companion. Load multiple currencies, enjoy competitive exchange rates, and spend with ease anywhere in the world. Say goodbye to carrying cash and hello to convenience! 
 								</p>
 								<!-- <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
 									read more
@@ -401,10 +403,56 @@ overflow-x:hidden;
 							</div> -->
 						</div>
 					</div>
-				</div>
-			</div><!--/.container-->
+				
+			</div>
+		</section>
+
+		<!-- our service -->
+		<!-- why ch -->
+		<section class="container">
+    <div class="row">
+      <br>
+      <br>
+      <div class="col-md-12 col-lg-6">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <img src="https://www.buyforex.com/SEOImages/1.png">
+                        <img src="https://www.buyforex.com/SEOImages/2.png">
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <img src="https://www.buyforex.com/SEOImages/3.png">
+                        <img src="https://www.buyforex.com/SEOImages/4.png">
+                    </div>
+                </div>
+     </div>
+     <div class="col-md-6">
+
+     	
+
+      <br><br>
+     </div>
+    </div>
+</section>
+
+          
+      
+
+		<!-- why ch -->
 		
-		</section><!--/.works-->
+
+		<!--works start -->
+		<!-- <section id="works" class="works">
+			<div class="container">
+				<div class="section-header">
+					<br><br>
+					<h2>how it works</h2> -->
+
+					<!-- <p>Learn More about how our website works</p> -->
+				<!-- </div>/.section-header -->
+				<!--   --> --><!--/.container-->
+		
+		<!-- </section> -->
+		<!--/.works-->
 		<!--works end -->
 		<!-- our b -->
 <section id="works" class="works" style="background-color:black; color: white; ">
@@ -1167,40 +1215,72 @@ overflow-x:hidden;
   <span class="dot" onclick="currentSlide(2)"></span> 
   <!-- <span class="dot" onclick="currentSlide(3)"></span>  -->
 </div>
+ 
 </section>
 		<!-- seccccc -->
 
 		<!--footer start-->
-		<footer id="footer"  class="footer" style="background-color:#000;">
+		<hr class=""style=" width: 100%; margin:auto; border: 2px solid  #038034;">
+		<br>
+		<br>
+		<footer style="background-color:#fff; color: #fff; ">
 			<div class="container">
-				<div class="footer-menu">
+				<div class="" style="">
 		           	<div class="row">
-			           	<div class="col-sm-3">
+			           	<div class="col-sm-5" >
+			           		
+				                <a class="" style="background-color:#fff;"href="index.html"><img class="logo" style="width:200px" src="logo.png"  ></span></a>
+				                <p class="" style="padding:10px 30px; color: black;">Mobile No : +91 000000000</p>
+				                <p class="" style="padding:10px 30px; color: black;">Email Id: abcd@gmail.com</p>
+				           
+			           	</div>
+			           	<div class="col-sm-4">
 			           		 <div class="navbar-header">
-				                <a class="navbar-brand" href="index.html">list<span>race</span></a>
+			           		 	<h2 style="color: #038034; padding-top:30px ;"><span> HELP</span>  </h2>
+			           		 	<p style="color: black; padding-top:30px ;">FAQ </p>
+			           		 	<p style="color: black; padding-top:10px ;">Terms & Condition </p>
+			           		 	<p style="color: black; padding-top:10px ;">Privacy Policy   </p>
+
+			           		 	 
+
+				                
 				            </div><!--/.navbar-header-->
 			           	</div>
-			           	<div class="col-sm-9">
-			           		<ul class="footer-menu-item">
-			                    <li class="scroll"><a href="#works">how it works</a></li>
-			                    <li class="scroll"><a href="#explore">explore</a></li>
-			                    <li class="scroll"><a href="#reviews">review</a></li>
-			                    <li class="scroll"><a href="#blog">blog</a></li>
-			                    <li class="scroll"><a href="#contact">contact</a></li>
-			                    <li class=" scroll"><a href="#contact">my account</a></li>
-			                </ul><!--/.nav -->
+			           	<div class="col-sm-2"></div>
+			           	<div class="col-sm-3">
+			           		  <div class="navbar-header">
+			           		 	<h2 style="color: #038034; padding-top:30px ;"><span>  Quick Links</span>  </h2>
+			           		 	<p style="color: black; padding-top:30px ;"> Money exchange Service  </p>
+			           		 	<p style="color: black; padding-top:10px ;"> University Fee Payment     </p>
+			           		 	<p style="color: black; padding-top:10px ;">Buy/Sell currencies  </p>
+			           		 	<p style="color: black; padding-top:10px ;"> Visa Fee payment</p>
+			           		 	<p style="color: black; padding-top:10px ;"> Forex travel card   </p>
+			           		 	<p style="color: black; padding-top:10px ;">Medical Payment</p>
+
+
+			           		 	 
+
+				                
+				            </div><!--/.navbar-header-->
 			           	</div>
+			           	
 		           </div>
+		           <br>
+		           <br>
+		          
 				</div>
-				<div class="hm-footer-copyright">
+			</div>
+
+				
+				<div class="" style="background-color: #038034;">
 					<div class="row">
-						<div class="col-sm-5">
-							<p>
-								&copy;copyright. designed and developed by <a href="https://www.themesine.com/">themesine</a>
+						<div class="col-sm-5" style="color:#fff">
+							<p class="text-center" style="color:#fff">
+								&copy;copyright. designed and developed by TBI
 							</p><!--/p-->
 						</div>
-						<div class="col-sm-7">
-							<div class="footer-social">
+						<div class="col-sm-7" style="">
+							<div class="footer-social" style="">
 								<span><i class="fa fa-phone"> +1  (222) 777 8888</i></span>
 								<a href="#"><i class="fa fa-facebook"></i></a>	
 								<a href="#"><i class="fa fa-twitter"></i></a>
@@ -1252,6 +1332,27 @@ function showSlides1(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+<!-- acc -->
+<!-- <script>
+	var acc = document.getElementsByClassName("accordion1");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script> -->
 
 
 		<script src="assets/js/jquery.js"></script>
